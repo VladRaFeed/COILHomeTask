@@ -181,6 +181,7 @@ https://github.com/Zero6992/chatGPT-discord-bot""")
         app_commands.Choice(name="Do Anything Now", value="dan"),
         app_commands.Choice(name="Smart mode(AIM)", value="aim"),
         app_commands.Choice(name="Developer Mode", value="Developer Mode"),
+        app_commands.Choice(name="Wolfi", value="Wolfi"),
     ])
     async def switchpersona(interaction: discord.Interaction, persona: app_commands.Choice[str]):
         if interaction.user == discordClient.user:
